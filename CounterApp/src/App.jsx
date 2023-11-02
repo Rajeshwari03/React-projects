@@ -5,7 +5,10 @@ function App() {
    let [counter, setCounter] = useState(15)
   const addValue=()=>{
     if(counter<20)
-     setCounter(counter+1)
+     setCounter(prevCounter =>prevCounter+1)//writing counter+1 4 times will not work as react works in batches and it will consider same counter and same operation is getting performed so, need to use it as arrow function
+     setCounter(prevCounter =>prevCounter+1)
+     setCounter(prevCounter =>prevCounter+1)
+     setCounter(prevCounter =>prevCounter+1)
   }
    const removeValue=()=>{
     if(counter>0)
