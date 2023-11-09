@@ -33,8 +33,8 @@ return (
         backgroundImage: `url('https://images.pexels.com/photos/534216/pexels-photo-534216.jpeg?auto=compress&cs=tinysrgb&w=600')`,
       }}
   >
-      <div className="w-full bg-right bg-no-repeat"
-      style={{backgroundImage:`url('https://images.pexels.com/photos/18804128/pexels-photo-18804128/free-photo-of-people-exchanging-money.jpeg?auto=compress&cs=tinysrgb&w=600')`}}>
+      <div className="w-full h-full bg-right bg-no-repeat"
+      style={{backgroundImage:`url('https://images.pexels.com/photos/6771670/pexels-photo-6771670.jpeg?auto=compress&cs=tinysrgb&w=600')`}}>
           <div className="w-full max-w-md float-left mt-0 mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
               <form
                   onSubmit={(e) => {
