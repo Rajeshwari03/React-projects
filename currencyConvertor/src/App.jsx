@@ -3,6 +3,7 @@ import { InputBox } from './components'
 import './App.css'
 import useCurrencyInfo from './customHooks/useCurrencyInfo'
 
+
 function App() {
   const [amount, setAmount] = useState(0)
   const [from, setFrom] = useState("usd")
@@ -11,7 +12,7 @@ function App() {
   // const [optionFrom,setOptionFrom]=useState()
 
   const currencyInfo=useCurrencyInfo(from)
-
+console.log(currencyInfo)
   const options=Object.keys(currencyInfo)
 
   const swap=()=>{
@@ -23,8 +24,8 @@ function App() {
 const convert=()=>{
   setconvertedAmt(amount*currencyInfo[to])
 }
-console.log(from);
-console.log(to);
+// console.log(from);
+// console.log(to);
 return (
   
   <div
